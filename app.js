@@ -13,5 +13,5 @@ toggleButton.addEventListener('click', () => {
         link.classList.toggle('active');
     });
     navButtons.classList.toggle('active');
-    heading.classList.add('heading-center');
+    // heading.classList.add('heading-center');
 });
