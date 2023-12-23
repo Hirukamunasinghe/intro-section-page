@@ -220,7 +220,7 @@ nav .nav-heading{
 .main-heading{
   margin-top: 150px;
   margin-left: 170px;
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -294,8 +294,4 @@ nav .nav-heading{
     justify-content: center;
     gap: 0px;
   }
-
-
-
-
 }
