@@ -277,18 +277,25 @@ nav .nav-heading{
 
   .text-content{
     order: 3;
-    margin-left: -170px;
+    margin-left: -180px;
     text-align: center;
   }
 
   .main-heading{
-    font-size: 2.6rem;
+    font-size: 2rem;
+  }
+
+  .para{
+    line-height: 1.2;
+
   }
 
   .logos{
     justify-content: center;
-    gap: 15px;
+    gap: 0px;
   }
+
+
 
 
 }
