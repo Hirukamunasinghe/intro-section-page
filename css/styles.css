@@ -75,6 +75,10 @@ nav .nav-heading{
     text-align: center;
   }
 
+  .dropdown{
+    position: relative;
+  }
+
   .dropdown .dropbtn{
     cursor: pointer;
   }
@@ -82,13 +86,14 @@ nav .nav-heading{
   .dropdown-content{
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: left;
     display: none;
     border: 1px solid hsl(0, 0%, 98%);
     width: 100%;
     border-radius: 10px;
     background-color: hsl(0, 0%, 98%);
+    position: absolute;
   }
   
   .dropdown-content a:hover {
@@ -158,6 +163,10 @@ nav .nav-heading{
         align-items: center;
       }
 
+      .nav-buttons{
+        margin-left: 100px;
+      }
+
       .nav-buttons.active{
         display: block;
       }
@@ -182,6 +191,7 @@ nav .nav-heading{
       .dropdown-content{
         width: 100px;
         margin: 10px auto;
+        position: relative;
       }
 
       .dropdown-content .drop-content-link{
@@ -192,4 +202,93 @@ nav .nav-heading{
         text-decoration: none;
         padding: 10px 0px;
       }
+}
+
+
+.home-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.hero-image{
+  height: 680px;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+
+.main-heading{
+  margin-top: 150px;
+  margin-left: 170px;
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+
+.para{
+  margin-left: 170px;
+  margin-top: 40px;
+  color: hsl(0, 0%, 41%);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.btn{
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-left: 165px;
+  margin-top: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.logos{
+  display: flex;
+  gap: 35px;
+  margin-top: 90px;
+  margin-left: 150px;
+}
+
+@media (max-width: 1000px){
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .home-div{
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-top: -20px;
+
+  }
+
+  .hero-image{
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .text-content{
+    order: 3;
+    margin-left: -170px;
+    text-align: center;
+  }
+
+  .main-heading{
+    font-size: 2.6rem;
+  }
+
+  .logos{
+    justify-content: center;
+    gap: 15px;
+  }
+
+
 }
